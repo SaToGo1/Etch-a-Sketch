@@ -1,0 +1,16 @@
+.gridContainer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 204px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gridBody {
+    margin: 0;
+    padding: 0;
+    border: solid 1px black;
+    height: 49px;
+    width: 49px;
+}
