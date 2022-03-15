@@ -4,6 +4,11 @@ function gridCreation(numberOfCells = 16) {
     for(let i = 0; i < numberOfCells; i++){
         const div = document.createElement('div');
         div.setAttribute('class', 'gridBody');
+        div.setAttribute('onmouseover', 'putColor(this)');
         gridContainer.appendChild(div);
     }
+}
+
+function putColor(pixel){
+    pixel.style.backgroundColor = "black";
 }
