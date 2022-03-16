@@ -7,7 +7,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
 }
 
 .header {
@@ -36,10 +35,7 @@ body {
     width: 28px;
 }
 
-.gridBody:hover {
-    background-color: black;
-}
-
-.main-buttonContainer {
-    
+.main-div1 {
+    display: flex;
+    gap: 50px;
 }
