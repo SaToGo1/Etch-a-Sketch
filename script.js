@@ -1,3 +1,6 @@
+const body = document.querySelector("body");
+body.onload = function(){ gridCreation()} ;
+
 //Creates the grid in which we will draw.
 function gridCreation(numberOfCells = 16) {
     gridDelete();
@@ -13,12 +16,9 @@ function gridCreation(numberOfCells = 16) {
 }
 
 function gridDelete() {
-    //const gridBodyList = document.querySelectorAll(".gridBody");
-    //gridBodyList.forEach(gridBody => gridBody)
     const gridContainer = document.querySelector(".gridContainer");
     gridContainer.innerHTML = "";
 }
-
 
 function putColor(pixel){
     pixel.style.backgroundColor = "black";
@@ -30,10 +30,16 @@ function clearGrid(){
 }
 
 /* ************************* 
-    Range
+    Buttons
 ************************* */
-var slider = document.getElementById("myRange");
-var output = document.getElementById("rangeValue");
+// Clear Button
+const clearButton = document.getElementById("clearButton");
+clearButton.onclick = function(){ clearGrid() };
+
+// ************************* 
+//    Range
+const slider = document.getElementById("myRange");
+const output = document.getElementById("rangeValue");
 output.innerHTML = slider.value + " x " + slider.value;
 
 slider.oninput = function() {
@@ -41,6 +47,4 @@ slider.oninput = function() {
   gridCreation(this.value);
 } 
 
-/* ************************* 
-    Range
-************************* */
+// ************************* 

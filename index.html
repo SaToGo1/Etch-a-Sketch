@@ -5,14 +5,14 @@
     <title>etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="gridCreation()">
+<body>
     <header class="header"></header>
     
     <main class="main">
         <div class="main-div1">
             
             <div class="main-buttonContainer">
-                <button onclick="clearGrid()">Clear</button>
+                <button id="clearButton">Clear</button>
                 <div class="slidecontainer">
                     <input type="range" min="16" max="64" value="16" id="myRange">
                     <p>Grid: <span id="rangeValue"></span></p>
