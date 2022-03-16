@@ -12,3 +12,8 @@ function gridCreation(numberOfCells = 16*16) {
 function putColor(pixel){
     pixel.style.backgroundColor = "black";
 }
+
+function clearGrid(){
+    let gridBodyList = document.querySelectorAll(".gridBody");
+    gridBodyList.forEach(gridBody => gridBody.style.backgroundColor = "white");
+}
