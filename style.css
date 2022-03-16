@@ -32,12 +32,25 @@ body {
 .gridBody {
     margin: 0;
     padding: 0;
-    border: solid 1px black;
-   /* min-height: 28px; 
-    min-width: 28px; */ 
 }
 
 .main-div1 {
     display: flex;
     gap: 50px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.colorSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.rangeSection {
+    display: flex;
+    flex-direction: column;
 }

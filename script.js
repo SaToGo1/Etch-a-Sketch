@@ -27,18 +27,22 @@ function gridDelete() {
 }
 
 function calculateSizeOfGridBody(numberOfCells) {
-    // 2 from the border
-    return (GRID_SIZE/numberOfCells)-2;
-}
-
-function putColor(pixel){
-    pixel.style.backgroundColor = "black";
+    return (GRID_SIZE/numberOfCells);
 }
 
 function clearGrid(){
     let gridBodyList = document.querySelectorAll(".gridBody");
     gridBodyList.forEach(gridBody => gridBody.style.backgroundColor = "white");
 }
+
+/* ************************* 
+    Color
+************************* */
+function putColor(pixel){
+    const color = document.getElementById("color");
+    pixel.style.backgroundColor = color.value;
+}
+
 
 /* ************************* 
     Buttons
@@ -55,7 +59,8 @@ output.innerHTML = slider.value + " x " + slider.value;
 
 slider.oninput = function() {
   output.innerHTML = this.value + " x " + this.value;
-  gridCreation(this.value);
 } 
 
+const createNewGridButton = document.getElementById("createNewGridButton");
+createNewGridButton.onclick = function(){ gridCreation(slider.value); };
 // ************************* 
