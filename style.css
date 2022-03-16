@@ -1,3 +1,21 @@
+body {
+    min-height: 100vh;
+}
+
+.main {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    min-height: 10vh;
+}
+
+.footer {
+    min-height: 10vh;
+}
 .gridContainer {
     margin: 0;
     padding: 0;
@@ -5,6 +23,7 @@
     width: 480px; /* size of a row of the grid (30*16) */
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .gridBody {
